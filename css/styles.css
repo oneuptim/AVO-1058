@@ -187,24 +187,27 @@ li {
     color: #e81724;
 }
 
-.social-header {
+/*.social-header {
     // background: #efefef;
     padding: 0 20px 0 160px;
     // position: fixed;
     top: 0;
-}
+}*/
 .associate-avatar {
     height: 50px;
     width: auto;
     border-radius: 100%;
     margin: 10px;
 }
-.referrer-title {
-    display: inline;
-    vertical-align: middle;
+.referrer-section {
+    display: inline-flex;
+}
+
+.referrer-section  p {
     font-weight: 400;
     font-style: italic;
     color: #666666;
+    margin: 22px 5px;
 }
 .social-icon {
     width: 20px;
@@ -718,7 +721,7 @@ footer h5 {
         margin-left: auto;
         margin-right: auto;
     }
-    .referrer-title {
+    .referrer-section {
         font-size: 1.1em;
         margin-left: 10px;
     }
@@ -738,16 +741,6 @@ footer h5 {
         display: block;
         width: 70%;
     }
-    /*#feature1 .desc-red {
-        font-size: 2.4em;
-    }
-
-   #feature1 h3 {
-        text-align: center;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 64px;
-    }*/
 
 } 
 
@@ -756,6 +749,15 @@ footer h5 {
 
 /* Phones media */
 @media screen and (max-width: 575px) {
+
+    .navbar-default .navbar-brand {
+        color: #28a7e9;
+        font-size: 30px;
+        font-weight: bold;
+        height: 60px;
+        line-height: 35px;
+        margin-top: 5px;
+    }
     #home {
         background-position-y: 0px;
     }
@@ -786,8 +788,8 @@ footer h5 {
         display: inline-flex;
     }
 
-    .referrer-title {
-        margin-left: 5px;
+    .referrer-section {
+        display: inline-flex;
     }
     .hero {
         font-size: 50px;
