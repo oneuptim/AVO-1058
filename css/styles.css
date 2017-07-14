@@ -745,11 +745,58 @@ footer h5 {
 } 
 
 /* Tablets */
-@media screen and (max-width: 768px) { } 
+@media screen and (max-width: 768px) { 
+    .navbar-collapse {
+        padding: 0;
+    }
+    img {
+        margin: 0 auto;
+    }
+    #feature1 .desc-red {
+        font-size: 3.4rem;
+    }
+    #feature1 ul {
+        font-size: 1.4em;
+        margin-bottom: 50px;
+    }
+    #feature1 p {
+        padding-top: 20px;
+        font-size: 1.8em;
+    }
+    .red-text {
+        color: #e81724;
+        font-size: 1.8em;
+    }
+    .vertical-line {
+        border-left: 0px solid #ddd;
+        margin-top: 30px
+    }
+    .product-title {
+        font-size: 1.8em;
+    }
+    #divider .btn {
+        width: 80%;
+        padding: 30px 40px;
+        font-size: 1.4em;
+    }
+    #feature1 .btn {
+        padding: 35px;
+        width: 80%;
+    }
+
+} 
 
 /* Phones media */
 @media screen and (max-width: 575px) {
-
+    #divider .btn {
+        width: 80%;
+        padding: 20px 40px;
+        font-size: 1.1em;    
+    }
+    .product-title {
+        line-height: 0;
+        font-size: 1.2em;
+    }
     .navbar-default .navbar-brand {
         color: #28a7e9;
         font-size: 30px;
@@ -757,6 +804,14 @@ footer h5 {
         height: 60px;
         line-height: 35px;
         margin-top: 5px;
+    }
+    #feature1 ul {
+        font-size: 1.1em;
+        margin-bottom: 40px;
+    }
+    #feature1 p {
+        padding-top: 20px;
+        font-size: 1.2em;
     }
     #home {
         background-position-y: 0px;
@@ -790,6 +845,11 @@ footer h5 {
 
     .referrer-section {
         display: inline-flex;
+        width: 159px;
+    }
+    .referrer-section p {
+        font-size: 0.9em;
+        margin-top: 25px;
     }
     .hero {
         font-size: 50px;
@@ -800,6 +860,7 @@ footer h5 {
     }
     .vertical-line {
     border-left: 0px solid #ddd;
+    margin-top: 30px
     }
     .section-title {
         font-size: 2.6em;
@@ -830,6 +891,7 @@ footer h5 {
     #feature1 .desc-red {
         margin-bottom: 30px;
         margin-top: 20px;
+        font-size: 1.6rem;
     }
     .left {
         text-align: center;
