@@ -103,7 +103,7 @@
 						<img src="images/Energy_20Drink_20Jar-Orange-01.png" class="img-responsive" alt="feature img">
 						<h3 class="product-name">Energy Jar<br> Orange</h3>
 						<p class="product-price">$12.50</p><br>
-						<button class="btn btn-primary inverted text-uppercase">Buy Now</button>
+						<button class="btn btn-primary inverted text-uppercaset" onclick="submitVibeForm();">Buy Now</button>
 					</div>
 					<div class="col-md-6 wow fadeInUp video" data-wow-delay="0.6s">
 						<div class="video-container">
@@ -230,6 +230,12 @@
 				</div>
 			</div>
 		</footer>
+		<form id="vibe-cart-form" action="https://idlife-stage3.vibeoffice.com/shop/orders/populate" method="post">
+
+		  <input type="hidden" name="variant_id" value="5"/>
+		  <input type="hidden" name="tokem" value="MmU5ZmZiODVmNGE2YjI0MjJhZmZiOGU0NGQ5ZWIzZmM=">
+
+		</form>
 		<!-- end footer -->
         
 		<script src="js/jquery.js"></script>
@@ -237,5 +243,10 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.singlePageNav.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+			function submitVibeForm() {
+			  document.getElementById("vibe-cart-form").submit();
+			}
+		</script>
 	</body>
 </html>
