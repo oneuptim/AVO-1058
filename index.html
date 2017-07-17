@@ -104,6 +104,7 @@
 						<h3 class="product-name">Energy Jar<br> Orange</h3>
 						<p class="product-price">$12.50</p><br>
 						<button class="btn btn-primary inverted text-uppercaset" onclick="submitVibeForm();">Buy Now</button>
+						<button class="btn btn-primary inverted text-uppercaset" onclick="submitVibeForm1();">Buy Now1</button>
 					</div>
 					<div class="col-md-6 wow fadeInUp video" data-wow-delay="0.6s">
 						<div class="video-container">
@@ -231,12 +232,15 @@
 			</div>
 		</footer>
 		<form id="vibe-cart-form" action="https://idlife-stage3.vibeoffice.com/shop/orders/populate" method="post">
-
-		  <input type="hidden" name="variant_id" value="5"/>
+		  	<input type="hidden" name="variant_id" value="5"/>
 			<input type="hidden" name="quantity" value="1"/>
 			<input type="hidden" name="consultant_id" value="1231649"/>
-		  <input type="hidden" name="token" value="ZGQ5MjAyNDhkZDVkMTdjODQ5MjI4MDY4YzcxZTc5MWU=">
-
+		  	<input type="hidden" name="token" value="ZGQ5MjAyNDhkZDVkMTdjODQ5MjI4MDY4YzcxZTc5MWU=">
+		</form>
+		
+		<form id="vibe-cart-form1" action="https://idlife-stage3.vibeoffice.com/shop/orders/demo_populate" method="post">
+		  	<input type="hidden" name="variant_id" value="5"/>
+			<input type="hidden" name="quantity" value="1"/>
 		</form>
 		<!-- end footer -->
         
@@ -248,6 +252,9 @@
 		<script>
 			function submitVibeForm() {
 			  document.getElementById("vibe-cart-form").submit();
+			}
+			function submitVibeForm1() {
+			  document.getElementById("vibe-cart-form1").submit();
 			}
 		</script>
 	</body>
