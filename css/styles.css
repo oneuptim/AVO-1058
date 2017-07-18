@@ -785,6 +785,9 @@ footer h5 {
 
 /* Phones media */
 @media screen and (max-width: 575px) {
+    .navbar-nav {
+        margin: 0px;
+    }
     #divider .btn {
         width: 80%;
         padding: 20px 40px;
