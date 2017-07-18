@@ -387,22 +387,19 @@ li {
     color: #fff;
 }
 
- #feature1 .inverted
-    {
+ #feature1 .inverted {
     background: #e81724;
     border: 1px solid #e81724;
     border-radius: 0px;
     color: #fff;
-    font-weight: bold;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-top: -20px;
-    margin-bottom: 30px;
+    padding: 10px 100px;
+    margin: -10px auto 30px auto;
     transition: all 0.3s ease;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.3em;
+    font-weight: 100;
+    text-transform: uppercase;	 
     display: flex;
-    }
+ }
 
  #feature1 .inverted:hover {
     background: transparent;     
